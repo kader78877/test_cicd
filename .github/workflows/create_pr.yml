@@ -41,4 +41,4 @@ jobs:
             owners
             maintainers
           milestone: 1
-          draft: true
+          draft: false
