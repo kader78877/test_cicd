@@ -20,7 +20,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: Update report
-          committer: GitHub aababdelkader@gmail.com
+          committer: aababdelkader@gmail.com
 #          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: int
