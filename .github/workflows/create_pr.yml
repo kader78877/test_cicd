@@ -5,6 +5,7 @@ on:
       - dev
 jobs:
   create_pr:
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v3
 
