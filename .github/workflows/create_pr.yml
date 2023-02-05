@@ -7,7 +7,12 @@ jobs:
   create_pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - name: Checkout repo
+        uses: action/checkout@v3
+        with:
+          repository: kader78877/test_cicd
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: dev
 
       - name: Create Pull Request
         id: cpr
