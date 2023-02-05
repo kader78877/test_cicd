@@ -20,12 +20,13 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: Update report
-#          committer: GitHub aababdelkader@gmail.com
-#          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          committer: kader78877 <aababdelkader@gmail.com>
+          author: kader78877 <aababdelkader@gmail.com>
           signoff: false
           branch: int
+          base: dev
           delete-branch: false
-          title: 'Test PR'
+          title: 'Raise PR'
           body: |
             Update report
             - Updated with *today's* date
@@ -40,5 +41,3 @@ jobs:
           team-reviewers: |
             owners
             maintainers
-          milestone: 1
-          draft: false
